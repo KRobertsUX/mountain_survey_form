@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mountaineering Survey Form, FreeCodeCamp Curicullum</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1 id="title">Mountaineering Club Survey Form</h1>
+            <p id="description">Thank you for giving us feedback and suggestions on our club activities.</p>
+        </header>
+
+        <form id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" name="name" required>
+            </div>
+            <div>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" placeholder="Age" min="16" max="120" name="age">
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Email" name="email" required>
+            </div>
+            <div>
+                <label for="dropdown">Which option best describes your current situation?</label>
+                <select name="Situation" id="dropdown">
+                    <option value="">Choose your current situation here</option>
+                    <option value="student">Student</option>
+                    <option value="working">Working</option>
+                    <option value="retired">Retired</option>
+                    <option value="prefer-not-to-say">I prefer not to say</option>
+                    <option value="other">Other...</option>
+                </select>
+            </div>
+            <div>
+                <label for="recommendation">Would you recommend our club to a friend?</label>
+                <div id="recommendation">
+
+                    <input type="radio" id="definitely" name="recommendation" value="definitely">
+                    <label for="definitely">Definitely</label>
+
+                    <input type="radio" id="maybe" name="recommendation" value="maybe">
+                    <label for="maybe">maybe</label>
+
+                    <input type="radio" id="not_sure" name="recommendation" value="not_sure">
+                    <label for="not_sure">Not sure</label>
+
+                    <input type="radio" id="no" name="recommendation" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <div>
+                <label for="favourite">What is your favourite part of our club activities?</label>
+                <input type="dropdown" placeholder="Select your favourite activity here">
+            </div>
+            <div>
+                <p>What is your motivation to join club activities?</p>
+                <input type="checkbox" id="fit" value="get_fit">
+                <label for="fit">To get Fit</label>
+
+                <input type="checkbox" id="meet" value="meet_people">
+                <label for="meet">To meet other like minded people</label>
+
+                <input type="checkbox" id="friends" value="make_friends">
+                <label for="friends">To make friends</label>
+
+                <input type="checkbox" id="mental_health" value="mental_health">
+                <label for="mental_health">To improve mental health</label>
+
+                <input type="checkbox" id="other" value="other">
+                <label for="other">Other</label>
+            
+            </div>
+            <div>
+                <label for="suggestions">Any comments or suggestions?</label>
+                <textarea id="suggestions" name="comments" rows="5" columns="33"></textarea>
+            </div>
+            <div>
+                <button id="submit">Submit!</button>
+            </div>
+
+
+
+
+
+
+        </form>
+    </div>
+    
+</body>
+</html>
