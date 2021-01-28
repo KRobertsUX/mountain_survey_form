@@ -102,6 +102,7 @@ button {
     height: 2.25rem;
     width: 18rem;
     border: solid 1px #01A39D;
+    margin: 0 auto;
 }
 
 /* Layout styling =====================================*/
