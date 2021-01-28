@@ -1,108 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300;1,400&family=Proza+Libre:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300;1,400&family=Proza+Libre:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <title>Mountaineering Survey Form, FreeCodeCamp Curicullum</title>
 </head>
+
 <body>
-        <div class="container">
+    <div class="container">
         <header>
             <h1 id="title">Mountaineering Club Survey Form</h1>
             <p id="description">Thank you for giving us feedback and suggestions on our club activities.</p>
         </header>
-        <div class="whole-form">
-        <form id="survey-form" method="">
-            <div class="form-section">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" placeholder="Enter your name" name="name" required>
+
+        <main>
+            <div class="whole-form">
+                <form id="survey-form" method="">
+                    <div class="form-section">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" name="name" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="number" id="number-label">Age</label>
+                        <input type="number" id="number" placeholder="Age" min="16" max="120" name="age">
+                    </div>
+                    <div class="form-section">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" id="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="dropdown">Which option best describes your current situation?</label>
+                        <select name="Situation" id="dropdown">
+                            <option value="">Choose your current situation here</option>
+                            <option value="student">Student</option>
+                            <option value="working">Working</option>
+                            <option value="retired">Retired</option>
+                            <option value="prefer-not-to-say">I prefer not to say</option>
+                            <option value="other">Other...</option>
+                        </select>
+                    </div>
+                    <div class="form-section">
+                        <label for="recommendation">Would you recommend our club to a friend?</label>
+                        <div id="recommendation">
+                            <div>
+                                <input type="radio" id="definitely" name="recommendation" value="definitely">
+                                <label for="definitely">Definitely</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="maybe" name="recommendation" value="maybe">
+                                <label for="maybe">maybe</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="not_sure" name="recommendation" value="not_sure">
+                                <label for="not_sure">Not sure</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="no" name="recommendation" value="no">
+                                <label for="no">No</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="favourite">What is your favourite part of our club activities?</label>
+                        <select name="favourite" id="favourite">
+                            <option value="">Choose your favourite activity here</option>
+                            <option value="climbing">Climbing</option>
+                            <option value="hillwalking">Hillwalking</option>
+                        </select>
+                    </div>
+
+                    <div class="form-section" class="checkbox">
+                        <p class="label">What is your motivation to join club activities?</p>
+                        <div class="checkboxes">
+                            <div>
+                                <input type="checkbox" id="fit" value="get_fit">
+                                <label for="fit">To get Fit</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="meet" value="meet_people">
+                                <label for="meet">To meet other like minded people</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="friends" value="make_friends">
+                                <label for="friends">To make friends</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="mental_health" value="mental_health">
+                                <label for="mental_health">To improve mental health</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="other" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label for="suggestions">Any comments or suggestions?</label>
+                        <textarea id="suggestions" name="comments" rows="5" columns="33"
+                            placeholder="Write your commments here..."></textarea>
+                    </div>
+                    <div class="form-section">
+                        <button id="submit">Submit!</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-section">
-                <label for="number" id="number-label">Age</label>
-                <input type="number" id="number" placeholder="Age" min="16" max="120" name="age">
-            </div>
-            <div class="form-section">
-                <label for="email" id="email-label">Email</label>
-                <input type="email" id="email" placeholder="Email" name="email" required>
-            </div>
-            <div class="form-section">
-                <label for="dropdown">Which option best describes your current situation?</label>
-                <select name="Situation" id="dropdown">
-                    <option value="">Choose your current situation here</option>
-                    <option value="student">Student</option>
-                    <option value="working">Working</option>
-                    <option value="retired">Retired</option>
-                    <option value="prefer-not-to-say">I prefer not to say</option>
-                    <option value="other">Other...</option>
-                </select>
-            </div>
-            <div class="form-section">
-                <label for="recommendation">Would you recommend our club to a friend?</label>
-                <div id="recommendation">
-
-                    <input type="radio" id="definitely" name="recommendation" value="definitely">
-                    <label for="definitely">Definitely</label>
-
-                    <input type="radio" id="maybe" name="recommendation" value="maybe">
-                    <label for="maybe">maybe</label>
-
-                    <input type="radio" id="not_sure" name="recommendation" value="not_sure">
-                    <label for="not_sure">Not sure</label>
-
-                    <input type="radio" id="no" name="recommendation" value="no">
-                    <label for="no">No</label>
-                </div>
-            </div>
-            
-            <div class="form-section">
-                <label for="favourite">What is your favourite part of our club activities?</label>
-                <select name="favourite" id="favourite">
-                    <option value="">Choose your favourite activity here</option>
-                    <option value="climbing">Climbing</option>
-                    <option value="hillwalking">Hillwalking</option>
-                </select>
-            </div>
-
-            <div class="form-section" class="checkbox">
-                <p class="label">What is your motivation to join club activities?</p>
-                <input type="checkbox" id="fit" value="get_fit">
-                <label for="fit">To get Fit</label>
-
-                <input type="checkbox" id="meet" value="meet_people">
-                <label for="meet">To meet other like minded people</label>
-
-                <input type="checkbox" id="friends" value="make_friends">
-                <label for="friends">To make friends</label>
-
-                <input type="checkbox" id="mental_health" value="mental_health">
-                <label for="mental_health">To improve mental health</label>
-
-                <input type="checkbox" id="other" value="other">
-                <label for="other">Other</label>
-            
-            </div>
-            <div class="form-section">
-                <label for="suggestions">Any comments or suggestions?</label>
-                <textarea id="suggestions" name="comments" rows="5" columns="33"></textarea>
-            </div>
-            <div class="form-section">
-                <button id="submit">Submit!</button>
-            </div>
-
-
-
-
-
-
-        </form>
+        </main>
     </div>
-</div>
-    
+
+    <footer>
+        
+    </footer>
+
 </body>
+
 </html>
