@@ -24,6 +24,7 @@ body {
 /* Header  ==================================== */
 header {
     margin: 0 15px;
+    text-align: center;
 }
 h1 {
     font-family: 'Proza Libre', sans-serif;
