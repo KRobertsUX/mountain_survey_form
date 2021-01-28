@@ -1,7 +1,13 @@
+/* Global Styles ============================ */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 html {
     font-size: 16px;
 }
-
 body {
     margin: 0;
     color: white;
@@ -14,17 +20,17 @@ body {
     background-size: 100%;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Header  ==================================== */
 header {
     margin: 0 15px;
 }
-
 h1 {
     font-family: 'Proza Libre', sans-serif;
     font-weight: 400;
-    margin: 0.3rem 0;
+    margin: 15px 0;
     font-size: 1.7rem;
 }
-
 header p {
     font-style: italic;
     font-size: 1rem;
@@ -33,39 +39,76 @@ header p {
     margin-bottom: 0;
 }
 
+/* Main ==================================== */
 .form-section label {
     margin-bottom: 0.3rem;
 }
-
-
 .whole-form {
     background-color: #181C45;
     size: 30%;
     margin: 0 auto;
     width: 100%;
+    font-style: normal;
+    font-weight: 600;
     font-size: 1.1rem;
+    padding-bottom: 1rem;
 }
-
 .form-section {
-    margin: 0.5rem 15px;
+    margin: 2rem 15px;
     display: flex;
     flex-direction: column;
 }
-
 .form-section:nth-of-type(1) {
     padding-top: 1rem;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+}
+.form-section input[type="text"]::placeholder,
+              input[type="email"]::placeholder,
+              input[type="number"]::placeholder,
+              input[type="dropdown"]::placeholder,
+              select#favourite,
+              select#dropdown,
+              textarea#suggestions {
+                    font-size: 1rem;
+                    font-family: inherit;
+                    color: #00000099;
+}
+.form-section input[type="text"],
+              input[type="email"],
+              input[type="number"] {
+    width: 100%;
+    height: 2rem;
+}
+select#dropdown,
+select#favourite {
+    height: 2rem;
+}
+div#recommendation {
+    font-size: 1rem;
+    font-weight: 300;
     display: flex;
-
-    letter-spacing: 0.15px;
+    flex-direction: column;
+}
+.checkboxes {
+    font-size: 1rem;
+    font-weight: 300;
+}
+/* Links and Buttons ============================ */
+button {
+    background-color: #01A39D;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 200px;
+    height: 2.25rem;
+    width: 18rem;
+    border: solid 1px #01A39D;
 }
 
+/* Layout styling =====================================*/
 
-/* body {
-    background: center/100% no-repeat url(https://images.unsplash.com/photo-1556134916-95c4869e1eaf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2681&q=80);
-    color: white;
-} */
+/* Media Queries =====================================*/
+
+
+
+
+
