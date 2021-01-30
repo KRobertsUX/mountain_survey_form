@@ -83,16 +83,18 @@ select#favourite:focus-visible {
     color: blue;
 }
 
-
-
 .form-section input[type="text"],
               input[type="email"],
-              input[type="number"]
+              input[type="number"],
               input[type="textarea"] {
     width: 100%;
     height: 2rem;
     color: blue;
     font-size: 1.1rem;
+}
+
+input#number {
+    height: 2rem;
 }
 
 select#dropdown,
