@@ -16,10 +16,16 @@ body {
         rgba(24, 28, 69, 0.5),
         rgba(24, 28, 69, 0.5)
     ),
-    url(https://images.unsplash.com/photo-1556134916-95c4869e1eaf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2681&q=80);
-    background-size: 100%;
+    url(https://images.unsplash.com/photo-1556134916-95c4869e1eaf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2681&q=80) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* to keep my background covering the entire page I used the first solution from this site
+https://css-tricks.com/perfect-full-page-background-image/ */
 
 /* Header  ==================================== */
 header {
