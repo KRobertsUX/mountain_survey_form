@@ -152,6 +152,10 @@ input::placeholder {
       color: black;
   }
 
+textarea {
+    padding-left: 3px;
+}
+
 
 
 /* select::active {
