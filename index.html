@@ -37,13 +37,14 @@
                     </div>
                     <div class="form-section">
                         <label for="dropdown">Which option best describes your current situation?</label>
-                        <select name="Situation" id="dropdown">
-                            <option value="">Choose your current situation here</option>
-                            <option value="student">Student</option>
-                            <option value="working">Working</option>
-                            <option value="retired">Retired</option>
-                            <option value="prefer-not-to-say">I prefer not to say</option>
-                            <option value="other">Other...</option>
+                        <select name="Situation" id="dropdown" onchange="this.className=this.options[this.selectedIndex].className"
+                        class="grey">
+                            <option disabled selected value="" class="grey">Choose your current situation here</option>
+                            <option value="student" class="black">Student</option>
+                            <option value="working" class="black">Working</option>
+                            <option value="retired" class="black">Retired</option>
+                            <option value="prefer-not-to-say" class="black">I prefer not to say</option>
+                            <option value="other" class="black">Other...</option>
                         </select>
                     </div>
                     <div class="form-section">
@@ -70,10 +71,11 @@
 
                     <div class="form-section">
                         <label for="favourite">What is your favourite part of our club activities?</label>
-                        <select name="favourite" id="favourite">
-                            <option value="">Choose your favourite activity here</option>
-                            <option value="climbing">Climbing</option>
-                            <option value="hillwalking">Hillwalking</option>
+                        <select name="favourite" id="favourite" onchange="this.className=this.options[this.selectedIndex].className"
+                        class="grey">
+                            <option disabled selected value="" class="grey">Choose your favourite activity here</option>
+                            <option value="climbing" class="black">Climbing</option>
+                            <option value="hillwalking" class="black">Hillwalking</option>
                         </select>
                     </div>
 
