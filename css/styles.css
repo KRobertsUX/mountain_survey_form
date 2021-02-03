@@ -5,7 +5,7 @@ button: #01A39D
 linear-gradient color in front of the cover image: rgba(24, 28, 69, 0.5)
 
 Font Color: #ffffff
-Form Font Color/ unselected: #292929
+Form Font Color/ unselected: #707070
 font-family/ heading: font-family: 'Proza Libre', sans-serif
 font-family/ body: 'Open Sans', sans-serif;
 */
@@ -133,11 +133,11 @@ select {
 }
 
 textarea::placeholder {
-    color: pink;
+    color: #707070;
 }
 
 input::placeholder {
-    color: pink;
+    color: #707070;
 }
 
 [disabled] {
@@ -145,7 +145,7 @@ input::placeholder {
   }
   
   .grey {
-      color: pink;
+      color: #707070;
   }
 
   .black {
