@@ -1,3 +1,15 @@
+/*
+Colors used:
+Primary Color:  #181C45
+button: #01A39D
+linear-gradient color in front of the cover image: rgba(24, 28, 69, 0.5)
+
+Font Color: #ffffff
+Form Font Color/ unselected: #292929
+font-family/ heading: font-family: 'Proza Libre', sans-serif
+font-family/ body: 'Open Sans', sans-serif;
+*/
+
 /* Global Styles ============================ */
 html {
     box-sizing: border-box;
@@ -112,6 +124,49 @@ div#recommendation {
     font-weight: 300;
 }
 
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    width: 100%;
+    padding-left: 3px;
+}
+
+textarea::placeholder {
+    color: pink;
+}
+
+input::placeholder {
+    color: pink;
+}
+
+[disabled] {
+    color: gray;
+  }
+  
+  .grey {
+      color: pink;
+  }
+
+  .black {
+      color: black;
+  }
+
+
+
+/* select::active {
+    color: pink;
+} */
+
+/* input {
+    -webkit-appearance: none;
+    appearance: none;
+} */
+
+/* textarea {
+    -webkit-appearance: none;
+    appearance: none;
+} */
 
 
 /* Links and Buttons ============================ */
@@ -159,6 +214,8 @@ button {
     }
 
 }
+
+
 
 
 
